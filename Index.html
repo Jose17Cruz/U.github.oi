@@ -1,0 +1,185 @@
+<html>
+<head><title>Carátula de inicio</title></head>
+
+
+
+<body>
+<center><table width="1095" >
+<tr>
+<td width="1095" colspan="4"><img src="enca.png" width="1050"</td>
+</tr>
+
+
+
+<tr>
+<td width="10" height="30"><input type="datetime-local"> <br> <a href="Prctica14Menu.html"><img src="Imagen2.png" width="120" height="75" > </a> </td>
+ <br>
+  </td>
+<td rowspan="3" height="380">
+<p><font color="black" size="2" face="tahoma">
+	<center><img src="BIENVENIDOS (6).gif"></center>
+<center><b>COLEGIO DE ESTUDIOS CIENTÍFICOS Y TECNOLÓGICOS DEL ESTADO DE MÉXICO.<br> PLANTEL IXTLAHUACA</b><br><br><br><br>
+<center><b>PORTAFOLIO DE EVIDENCIA 2DO PARCIAL</b><br><br>
+<center><b>Módulo III:</b>Desarrolla Páginas Web <br><br>
+<center><b>Submódulo II:</b> Desarrolla Aplicaciones que se ejecutan en el cliente <br><br>
+<center><b>Submódulo III:</b> Desarrolla Aplicaciones que se ejecutan en el servidor <br><br> 
+<center><b>Elaborado por:</b>José Antonio Cruz Gutiérrez. <br><br> 
+<center><b> Grupo:</b>404 <br><br> 
+<center><b>Número de lista:</b> 04 <br><br> 
+<center><Ciclo escolar:</b> Febrero 2024 - Agosto 2024 <br><br>  
+
+</td>
+
+<td colspan="3" >
+<script type="text/javascript">
+    function greeting()
+{
+   var today = new Date();
+   var hrs = today.getHours();
+   document.writeln("<CENTER>");
+  // document.write("<H1>Buen");
+   if (hrs < 6)
+      document.write("");
+   else if (hrs < 12)
+      document.write("");
+   else if (hrs <= 18)
+      document.write("");
+   else
+      document.write("");
+   document.writeln("</H1>");
+   //document.write("Ingresaste a esta pagina el ");
+   dayStr = today.toLocaleString();
+   //document.write(dayStr);
+   document.writeln("</CENTER>");
+}
+function montharr(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11)
+{
+   this[0] = m0;
+   this[1] = m1;
+   this[2] = m2;
+   this[3] = m3;
+   this[4] = m4;
+   this[5] = m5;
+   this[6] = m6;
+   this[7] = m7;
+   this[8] = m8;
+   this[9] = m9;
+   this[10] = m10;
+   this[11] = m11;
+}
+function calendar()
+{
+   var monthNames = "EneFebMarAbrMayJunJulAgoSepOctNovDic";
+   var today = new Date();
+   var thisDay;
+   var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+   year = today.getYear() ;
+   thisDay = today.getDate();   
+   if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+   monthDays[1] = 29;
+   nDays = monthDays[today.getMonth()];
+   firstDay = today;
+   firstDay.setDate(1); // works fine for most systems
+   testMe = firstDay.getDate();
+   if (testMe == 2)
+   firstDay.setDate(0);    
+   startDay = firstDay.getDay();
+   document.writeln("<CENTER>");
+   document.write("<TABLE BORDER>");
+   document.write("<TR><TH COLSPAN=10>");
+   document.write(monthNames.substring(today.getMonth() * 3,
+   (today.getMonth() + 1) * 3));
+   document.write(". ");
+   document.write(year);
+   document.write("<TR><TH>D<TH>L<TH>M<TH>M<TH>J<TH>V<TH>S");
+   document.write("<TR>");
+   column = 0;
+   for (i=0; i<startDay; i++)
+   {
+   document.write("<TD>");
+   column++;
+   }
+   for (i=1; i<=nDays; i++)
+   {
+   document.write("<TD>");
+   if (i == thisDay)
+   document.write("<FONT COLOR=\"#FF0000\"><b>")
+   document.write(i);
+   if (i == thisDay)
+   document.write("</b></FONT>")
+   column++;
+   if (column == 7)
+   {
+   document.write("<TR>"); 
+   column = 0;
+   }
+   }
+   document.write("</TABLE>");
+   document.writeln("</CENTER>");
+}
+   greeting();
+   document.write("</br>");
+   calendar();
+   document.write("");
+   </script>
+
+
+	<div class="container">
+    <form action="#" method="post" id="loginForm">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Iniciar Sesión">
+
+
+    </form>
+</div>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "Jose" && password === "123") {
+            window.location.href = "Prctica14Menu.html";
+        } else {
+            alert("Usuario o contraseña incorrectos");
+        }
+    });
+</script>
+
+
+</td>
+
+</tr>
+
+<tr>
+<td><center>   <a href="HistoriaC.html"><img src="Cecytem1.2.png" width="150" height="120" ><br></center>
+	<center>   <a href="Misión.html"><img src="Cecytem1.3.png" width="150" height="110" ><br></center>
+		<br>
+	<center>   <a href="organigrama.html"><img src="Cecytem1.4.png" width="150" height="110" ><br></center>
+		<br>
+		<center>   <a href="HistoriaCecytem.html"><img src="Cecytem1.5.png" width="150" height="110" ><br></center>
+<br>
+<center>   <a href="croquis.html"><img src="Cecytem1.6.png" width="150" height="110" ><br></center>
+
+
+<tr>
+
+
+</tr>
+
+<tr>
+<td colspan="3"><center><font color="black" size="1.5" face="tahoma">
+	<img src="piedepag.png" ><br>
+Todos los derechos reservados. Elaborado por: José Antonio Cruz Gutiérrez. Tel: 7121171425. E-Mail: celia@gmail.com.mx. Página web: http://www.educacion.mx Domicilio conocido S/N. Prohibido su reproducción total o parcial. Para un óptimo funcionamiento utilizar navegador Google Chrome y resolución de 1024.
+</td></center>
+</tr>
+</table>
+
+ 
+</body>
+
+</html>
